@@ -1,0 +1,11 @@
+@media(max-width: 768px) {
+    #img-laptop {
+        display: none;
+    }
+}
+
+@media(max-width: 991px) {
+    #img-laptop {
+        display: none;
+    }
+}

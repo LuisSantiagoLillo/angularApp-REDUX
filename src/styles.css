@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    overflow-x: hidden;
+    box-sizing: content-box !important;
+}
+
+
+/*
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+*/
+
+.bg-degre-blue-orange {
+    font-family: 'Lora', serif;
+    background: -webkit-linear-gradient(50deg, #f7ba96 10%, #82cde3 90%);
+    background: -moz-linear-gradient(50deg, #f7ba96 10%, #82cde3 90%);
+    background: -ms-linear-gradient(50deg, #f7ba96 10%, #82cde3 90%);
+    background: -o-linear-gradient(50deg, #f7ba96 10%, #82cde3 90%);
+    background: linear-gradient(50deg, #f7ba96 10%, #82cde3 90%);
+}

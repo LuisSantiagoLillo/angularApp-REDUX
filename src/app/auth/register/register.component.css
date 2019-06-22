@@ -1,0 +1,118 @@
+.box {
+    margin: 4em 0 0;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.shape1 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    float: left;
+    margin-right: -50px;
+}
+
+.shape2 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    margin-top: -30px;
+    float: left;
+}
+
+.shape3 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    margin-top: -30px;
+    float: left;
+    margin-left: -31px;
+}
+
+.shape4 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    margin-top: -25px;
+    float: left;
+    margin-left: -32px;
+}
+
+.shape5 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    float: left;
+    margin-right: -48px;
+    margin-left: -32px;
+    margin-top: -30px;
+}
+
+.shape6 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    float: left;
+    margin-right: -20px;
+    margin-top: -35px;
+}
+
+.shape7 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+    float: left;
+    margin-right: -20px;
+    margin-top: -57px;
+}
+
+
+/* VIP */
+
+.float {
+    position: absolute;
+    z-index: 2;
+}
+
+.form {
+    margin-left: 130px;
+    margin-top: 15px;
+}
+
+.shape-bg {
+    background: #0074d9;
+    background: #fff;
+}
+
+div#login-row h4 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-right: 5vw;
+    padding-top: 5vw;
+}
+
+@media(max-width: 600px) {
+    #loginForm {
+        display: inline;
+    }
+    #loginCloud {
+        display: none;
+    }
+}
+
+@media(min-width: 600px) {
+    #loginForm {
+        display: none;
+    }
+    #loginCloud {
+        display: relative;
+    }
+}

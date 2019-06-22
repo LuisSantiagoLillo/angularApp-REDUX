@@ -1,0 +1,80 @@
+{
+    "demo": {
+        "title": "Translation demo",
+        "text": "This is a simple demonstration app for ngx-translate"
+    },
+    "authFirebase": {
+        "allNeedKnow": "What is Personal IA?",
+        "initialTitle": "Personal IA ",
+        "initialText": "This is a Single Page Application (SPA) made with Angular 8.",
+        "initialItem1": "Uses external API's  to get some information like the weather, cryptocurrency...",
+        "initialItem2": "Uses REDUX pattern to communicate all the components witch each other.",
+        "initialItem3": "Styles made with Bootstrap y FontAwesome.",
+        "initialItem4": ""
+    },
+    "theme": {
+        "clear": "Clear Theme",
+        "dark": "Dark Theme"
+    },
+    "sidebar": {
+        "main": "Main",
+        "settings": "Settings",
+        "tools": "Tools",
+        "weather": "Weather",
+        "notes": "Notes",
+        "calendar": "Calendar",
+        "crypto": "Cryptocurrency"
+    },
+    "listening": {
+        "label": {
+            "input_placeholder": "Ask to "
+        }
+    },
+    "calendar": {
+        "month": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
+        },
+        "week": {
+            "monday": "Monday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday",
+            "thursday": "Thursday",
+            "friday": "Friday",
+            "saturday": "Saturday",
+            "sunday": "Sunday"
+        },
+        "titles": {
+            "create_notification": "Generate new alert"
+        },
+        "labels": {
+            "from": "From: ",
+            "to": "To: ",
+            "hour": "Hour: ",
+            "title": "Title: ",
+            "description": "Description: "
+        },
+        "buttons": {
+            "go_today": "Go today",
+            "every_day": "Every days",
+            "every_month": "Every month",
+            "some_days": "Depend of the day",
+            "validation": "CREATE NOTIFICATION",
+            "event_today": "Events today",
+            "event_week": "Events this week",
+            "event_month": "Events this month",
+            "event_rest": "Next events",
+            "event_last": "Last events"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<nav class="nav-side-menu" id="sidebar">
+    <div class="menu-list sticky-top sticky-offset">
+        <ul id="menu-content" class="menu-content" cdkDropList (cdkDropListDropped)="drop($event)">
+            <app-sidebar-visible-button></app-sidebar-visible-button>
+
+            <a (click)="navigateTo(option.href)" class="" cdkDrag *ngFor="let option of options">
+                <li>
+                    <i class="{{option.icon}} fa-lg fa-2x mr-4 ml-3 mt-2"></i><span class="options-text">{{option.text | translate}}</span>
+                    <span class="badge bg-theme badge-pill ml-2">{{option.notifications}}</span>
+                    <span *ngIf="option.text === 'sidebar.calendar'" class="badge bg-theme badge-pill ml-2">4</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+</nav>

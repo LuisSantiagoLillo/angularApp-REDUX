@@ -1,0 +1,81 @@
+{
+    "demo": {
+        "title": "Demo de traductor",
+        "text": "Esta es una demostración de uso de ngx-translate"
+    },
+    "authFirebase": {
+        "allNeedKnow": "¿Que es Personal IA?",
+        "initialTitle": "Personal IA",
+        "initialText": "Es una Single Page Application (SPA) realizada en Angular 8.",
+        "initialItem1": "Utiliza API's de terceros para extraer información como el tiempo, criptomonedas...",
+        "initialItem2": "Usa el patrón REDUX para comunicar todos los componentes entre sí.",
+        "initialItem3": "Estilos realizados con Bootstrap y FontAwesome.",
+        "initialItem4": ""
+    },
+    "theme": {
+        "clear": "Tema Claro",
+        "dark": "Tema Oscuro"
+    },
+    "sidebar": {
+        "main": "Principal",
+        "settings": "Configuraciones",
+        "tools": "Herramientas",
+        "weather": "El tiempo",
+        "notes": "Notas",
+        "calendar": "Calendario",
+        "crypto": "Cryptomonedas"
+    },
+    "listening": {
+        "label": {
+            "input_placeholder": "Preguntale a "
+        }
+    },
+    "calendar": {
+        "month": {
+            "january": "Enero",
+            "february": "Febrero",
+            "march": "Marzo",
+            "april": "Abril",
+            "may": "Mayo",
+            "june": "Junio",
+            "july": "Julio",
+            "august": "Agosto",
+            "september": "Septiembre",
+            "october": "Octubre",
+            "november": "Noviembre",
+            "december": "Diciembre"
+        },
+        "week": {
+            "monday": "Lunes",
+            "tuesday": "Martes",
+            "wednesday": "Miércoles",
+            "thursday": "Jueves",
+            "friday": "Viernes",
+            "saturday": "Sábado",
+            "sunday": "Domingo"
+        },
+        "titles": {
+            "create_notification": "Crea una nueva alerta"
+        },
+        "labels": {
+            "from": "Desde: ",
+            "to": "Hasta: ",
+            "hour": "Hora: ",
+            "title": "Título: ",
+            "description": "Descripción: "
+        },
+        "buttons": {
+            "go_today": "Ir a hoy",
+            "every_day": "Todos los días",
+            "every_month": "Cada mes",
+            "some_days": "Según el día de la semana",
+            "validation": "CREAR NOTIFICACIÓN",
+            "event_today": "Eventos hoy",
+            "event_week": "Eventos esta semana",
+            "event_month": "Eventos este mes",
+            "event_rest": "Eventos próximos",
+            "event_last": "Eventos pasados"
+        }
+    }
+
+}
