@@ -33,12 +33,10 @@ import { NavbarGradientComponent } from './components/navbars/navbar-gradient/na
 import { SidebarCircularComponent } from './components/sidebars/sidebar-circular/sidebar-circular.component';
 import { SidebarOcultoComponent } from './components/sidebars/sidebar-oculto/sidebar-oculto.component';
 import { SidebarOculto2Component } from './components/sidebars/sidebar-oculto2/sidebar-oculto2.component';
-import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { AuthFirebaseComponent } from './auth/auth-firebase/auth-firebase.component';
 import { SidebarVisibleButtonComponent } from './components/sidebar-visible-button/sidebar-visible-button.component';
 import { Login2Component } from './auth/login2/login2.component';
-import { NubeLoginComponent } from './auth/nube-login/nube-login.component';
 import { AccessWithoutRegisterComponent } from './auth/access-without-register/access-without-register.component';
 
 @NgModule({
@@ -55,12 +53,10 @@ import { AccessWithoutRegisterComponent } from './auth/access-without-register/a
     SettingsComponent,
     SidebarOcultoComponent,
     SidebarOculto2Component,
-    LoginComponent,
     RegisterComponent,
     AuthFirebaseComponent,
     SidebarVisibleButtonComponent,
     Login2Component,
-    NubeLoginComponent,
     AccessWithoutRegisterComponent
   ],
   imports: [

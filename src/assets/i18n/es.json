@@ -4,13 +4,17 @@
         "text": "Esta es una demostración de uso de ngx-translate"
     },
     "authFirebase": {
+        "changeLanguage": "Cambiar idioma ",
         "allNeedKnow": "¿Que es Personal IA?",
         "initialTitle": "Personal IA",
         "initialText": "Es una Single Page Application (SPA) realizada en Angular 8.",
         "initialItem1": "Utiliza API's de terceros para extraer información como el tiempo, criptomonedas...",
         "initialItem2": "Usa el patrón REDUX para comunicar todos los componentes entre sí.",
         "initialItem3": "Estilos realizados con Bootstrap y FontAwesome.",
-        "initialItem4": ""
+        "initialItem4": "",
+        "accessWithoutRegistration": "Acceder sin registrarse",
+        "signIn": "Login",
+        "signUp": "Registrarse"
     },
     "theme": {
         "clear": "Tema Claro",

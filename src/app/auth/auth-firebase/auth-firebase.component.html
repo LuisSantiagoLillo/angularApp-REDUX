@@ -1,6 +1,13 @@
 <!-- <app-login></app-login> -->
 <!-- <app-register></app-register> -->
 
+<nav class="navbar navbar-light bg-transparent fixed-top">
+    <div>
+        <span>{{'authFirebase.changeLanguage' | translate}} </span>
+        <app-change-languague></app-change-languague>
+    </div>
+</nav>
+
 
 
 <div class="container">
@@ -18,13 +25,13 @@
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Access without registration</a>
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{'authFirebase.accessWithoutRegistration' | translate}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Sign In</a>
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">{{'authFirebase.signIn' | translate}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Sign Up</a>
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">{{'authFirebase.signUp' | translate}}</a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -71,7 +78,7 @@
 
 
 
-
+<!-- NAVBAR FOOTER WITH MODALS -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
     <a class="navbar-brand">Personal IA</a>
@@ -87,7 +94,7 @@
                 <a class="nav-link">{{'authFirebase.allNeedKnow' | translate}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Cookies.exe</a>
+                <a class="nav-link" data-toggle="modal" data-target="#exampleModal" (click)="openModal()">Cookies.exe</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link">Termns.deb</a>
@@ -102,3 +109,26 @@
           </span>
     </div>
 </nav>
+
+<!-- ALL MODALS -->
+
+<!-- Cookies.exe Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

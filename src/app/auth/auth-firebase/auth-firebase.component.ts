@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AuthFirebaseComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit() {
   }
+
 
 }

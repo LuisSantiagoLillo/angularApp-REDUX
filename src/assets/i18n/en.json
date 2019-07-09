@@ -4,13 +4,17 @@
         "text": "This is a simple demonstration app for ngx-translate"
     },
     "authFirebase": {
+        "changeLanguage": "Change language ",
         "allNeedKnow": "What is Personal IA?",
         "initialTitle": "Personal IA ",
         "initialText": "This is a Single Page Application (SPA) made with Angular 8.",
         "initialItem1": "Uses external API's  to get some information like the weather, cryptocurrency...",
         "initialItem2": "Uses REDUX pattern to communicate all the components witch each other.",
         "initialItem3": "Styles made with Bootstrap y FontAwesome.",
-        "initialItem4": ""
+        "initialItem4": "",
+        "accessWithoutRegistration": "Access without registration",
+        "signIn": "Sign In",
+        "signUp": "Sign Up"
     },
     "theme": {
         "clear": "Clear Theme",
