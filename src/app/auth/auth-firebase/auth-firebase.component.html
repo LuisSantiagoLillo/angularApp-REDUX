@@ -21,16 +21,15 @@
             <p p class="text-light">a <code><strong>S</strong></code>ingle <code><strong>P</strong></code>age <code><strong>A</strong></code>pp with <code><strong>REDUX</strong></code></p>
             <img src="../../../assets/img/laptop.png" id="img-laptop" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-12 col-lg-6 m-2">
-
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
+        <div class="col-12 col-lg-6 m-2" id="tabLogin" *ngIf="_authFirebase.loading == false">
+            <ul class="nav nav-tabs uk-border-rounded" id="myTab" role="tablist">
+                <li class="nav-item text-monospace">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{{'authFirebase.accessWithoutRegistration' | translate}}</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-monospace">
                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">{{'authFirebase.signIn' | translate}}</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-monospace">
                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">{{'authFirebase.signUp' | translate}}</a>
                 </li>
             </ul>
@@ -45,6 +44,7 @@
                     <app-register></app-register>
                 </div>
             </div>
+
 
             <!--
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -70,9 +70,11 @@
                 </div>
             </div>
         -->
-
-
         </div>
+        <div class="col-12 col-lg-6 m-2" id="tabLogin" *ngIf="_authFirebase.loading == true">
+            <app-auth-loading></app-auth-loading>
+        </div>
+
     </div>
 </div>
 

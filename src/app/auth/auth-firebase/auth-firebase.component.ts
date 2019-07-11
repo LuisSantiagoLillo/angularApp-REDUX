@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
+import { AuthFbService } from '../../services/auth-fb.service';
 
 @Component({
   selector: 'app-auth-firebase',
@@ -19,7 +20,10 @@ export class AuthFirebaseComponent implements OnInit {
   </div>
   `;
 
-  constructor() { }
+  constructor(
+    public _authFirebase: AuthFbService
+  ) { }
+
   ngOnInit() {
   }
 

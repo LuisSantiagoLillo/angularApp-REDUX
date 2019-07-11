@@ -16,37 +16,50 @@ export class AuthFbService {
     private store: Store<State>
   ) {}
 
+  loading: boolean = false;
+
   createUser(name: string, email: string, password: string) {
-    this.afAuth.auth.createUserWithEmailAndPassword(email, password)
-      .then(resp => {
-        const user: User = {
-          name: name,
-          email: resp.user.email,
-          uid: resp.user.uid
-        };
-        this.storeUser(user);
-        this.store.dispatch(new SetUserAction(user));
-      })
-      .catch(err => {
-        Swal.fire('Register error', err.message, 'error');
-      });
+    this.loading = true;
+    setTimeout(() => {
+      this.afAuth.auth.createUserWithEmailAndPassword(email, password)
+        .then(resp => {
+          const user: User = {
+            name: name,
+            email: resp.user.email,
+            uid: resp.user.uid
+          };
+          this.storeUser(user);
+          this.store.dispatch(new SetUserAction(user));
+          this.loading = false;
+        })
+        .catch(err => {
+          this.loading = false;
+          Swal.fire('Register error', err.message, 'error');
+        });
+    }, 4000);
+
   }
 
-  login(email: string, password: string) {
-    this.afAuth.auth.signInWithEmailAndPassword(email, password)
-      .then(resp => {
-        console.log(resp);
-        const user: User = {
-          name: resp.user.displayName,
-          email: resp.user.email,
-          uid: resp.user.uid
-        };
-        this.storeUser(user);
-        this.store.dispatch(new SetUserAction(user));
-      })
-      .catch(err => {
-        Swal.fire('Login error', err.message, 'error');
-      });
+   login(email: string, password: string) {
+    this.loading = true;
+     setTimeout(() => {
+      this.afAuth.auth.signInWithEmailAndPassword(email, password)
+        .then(resp => {
+          console.log(resp);
+          const user: User = {
+            name: resp.user.displayName,
+            email: resp.user.email,
+            uid: resp.user.uid
+          };
+          this.storeUser(user);
+          this.store.dispatch(new SetUserAction(user));
+          this.loading = false;
+        })
+        .catch(err => {
+          this.loading = false;
+          Swal.fire('Login error', err.message, 'error');
+        });
+    }, 4000);
   }
 
   logout() {

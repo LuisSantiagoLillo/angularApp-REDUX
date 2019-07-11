@@ -48,6 +48,7 @@ import { SidebarVisibleButtonComponent } from './components/sidebar-visible-butt
 import { Login2Component } from './auth/login2/login2.component';
 import { AccessWithoutRegisterComponent } from './auth/access-without-register/access-without-register.component';
 import { LogoutButtonComponent } from './auth/logout-button/logout-button.component';
+import { AuthLoadingComponent } from './auth/auth-loading/auth-loading.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { LogoutButtonComponent } from './auth/logout-button/logout-button.compon
     SidebarVisibleButtonComponent,
     Login2Component,
     AccessWithoutRegisterComponent,
-    LogoutButtonComponent
+    LogoutButtonComponent,
+    AuthLoadingComponent
   ],
   imports: [
     BrowserModule,
