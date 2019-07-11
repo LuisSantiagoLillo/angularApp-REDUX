@@ -7,6 +7,7 @@ import { State } from './store/index';
 import {TranslateService} from '@ngx-translate/core';
 // DOCUMENT
 import { DOCUMENT } from '@angular/platform-browser';
+import { AuthFbService } from './services/auth-fb.service';
 
 
 
@@ -24,14 +25,23 @@ export class AppComponent implements OnInit {
   };
   globalSettings: GlobalSettings;
 
+  userLogged: boolean = false;
+
   constructor(
       public store: Store<State>,
       public translate: TranslateService,
+      public _fbAuth: AuthFbService,
       @Inject(DOCUMENT) private _document
-    ) {}
+    ) {
+    }
 
   ngOnInit(): void {
     this.store.subscribe(state => {
+      if (state.authentication.user != null) {
+        this.userLogged = true;
+      } else {
+        this.userLogged = false;
+      }
       this.globalSettings = state.globalSettings;
       if (state.globalSettings.languague !== this.language) {
         this.storeLanguague(state.globalSettings.languague);

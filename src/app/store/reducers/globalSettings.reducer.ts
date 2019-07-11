@@ -12,11 +12,11 @@ const stateInitial: fromGlobalSettings.GlobalSettings = {
         navbar: {
             navbarSimple1: {
                 name: 'navbarSimple1',
-                activated: false
+                activated: true
             },
             navbarGradient1: {
                 name: 'navbarGradient1',
-                activated: true
+                activated: false
             }
         },
         sidebar: {
@@ -26,7 +26,7 @@ const stateInitial: fromGlobalSettings.GlobalSettings = {
             },
             sidebarCircular1: {
                 name: 'sidebarCircular1',
-                activated: true
+                activated: false
             },
             sidebarReduced1: {
                 name: 'sidebarReduced1',
@@ -34,7 +34,7 @@ const stateInitial: fromGlobalSettings.GlobalSettings = {
             },
             sidebarHide1: {
                 name: 'sidebarHide1',
-                activated: false
+                activated: true
             },
             sidebarHide2: {
                 name: 'sidebarHide2',

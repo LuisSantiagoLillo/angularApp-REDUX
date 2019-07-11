@@ -99,6 +99,8 @@ div#login-row h4 {
     padding-top: 5vw;
 }
 
+
+/*
 @media(max-width: 600px) {
     #loginForm {
         display: inline;
@@ -116,3 +118,4 @@ div#login-row h4 {
         display: relative;
     }
 }
+*/

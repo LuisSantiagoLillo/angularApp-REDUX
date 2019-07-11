@@ -4,6 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
+
+// ** Modules Angular Fire 2
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+// **************************
+
 // Drag & Drop ************************************************ //
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
@@ -38,6 +47,7 @@ import { AuthFirebaseComponent } from './auth/auth-firebase/auth-firebase.compon
 import { SidebarVisibleButtonComponent } from './components/sidebar-visible-button/sidebar-visible-button.component';
 import { Login2Component } from './auth/login2/login2.component';
 import { AccessWithoutRegisterComponent } from './auth/access-without-register/access-without-register.component';
+import { LogoutButtonComponent } from './auth/logout-button/logout-button.component';
 
 @NgModule({
   declarations: [
@@ -57,10 +67,12 @@ import { AccessWithoutRegisterComponent } from './auth/access-without-register/a
     AuthFirebaseComponent,
     SidebarVisibleButtonComponent,
     Login2Component,
-    AccessWithoutRegisterComponent
+    AccessWithoutRegisterComponent,
+    LogoutButtonComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     DragDropModule, // Drag&Drop
     // Translate NGRX
@@ -72,6 +84,12 @@ import { AccessWithoutRegisterComponent } from './auth/access-without-register/a
         deps: [HttpClient]
       }
     }),
+    // Angular Fire 2
+    AngularFireModule.initializeApp(environment.firebase), // Angular Fire 2
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
+    AngularFireStorageModule, // imports firebase/storage only needed for storage features
+    // ***********************
     // REDUX - NGRX ********************************************** //
     StoreModule.forRoot(reducers, { metaReducers }),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthFbService } from '../../services/auth-fb.service';
 
 @Component({
   selector: 'app-register',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public authService: AuthFbService
+  ) { }
 
   ngOnInit() {
+  }
+
+  onSubmit(data: any) {
+    this.authService.createUser(data.name, data.email, data.password);
   }
 
 }

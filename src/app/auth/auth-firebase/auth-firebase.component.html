@@ -81,7 +81,7 @@
 <!-- NAVBAR FOOTER WITH MODALS -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
-    <a class="navbar-brand">Personal IA</a>
+    <a class="navbar-brand text-black-50">Personal IA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -91,11 +91,12 @@
                 <a class="nav-link"> <span class="sr-only">(current)</span><span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">{{'authFirebase.allNeedKnow' | translate}}</a>
+                <a class="nav-link" (click)="showWhatIsPersonalIA()">{{'authFirebase.allNeedKnow' | translate}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#exampleModal" (click)="openModal()">Cookies.exe</a>
+                <a class="nav-link" (click)="showCookies()">Cookies.exe</a>
             </li>
+            <!--
             <li class="nav-item">
                 <a class="nav-link">Termns.deb</a>
             </li>
@@ -103,32 +104,10 @@
             <li class="nav-item">
                 <a class="nav-link">Privacy</a>
             </li>
+        -->
         </ul>
         <span class="navbar-text mr-4">
             Made with  <i class="fas fa-heart text-danger ml-2 mr-2"></i> and <i class="fas fa-mug-hot text-dark ml-2 mr-2"></i>
           </span>
     </div>
 </nav>
-
-<!-- ALL MODALS -->
-
-<!-- Cookies.exe Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>

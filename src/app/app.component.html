@@ -1,12 +1,12 @@
 <!-- LOGIN & REGISTER-->
 
-<div class="bg-degre-blue-orange container-fluid" style="height: 100vh; width: 100vw;" *ngIf="true">
+<div class="bg-degre-blue-orange container-fluid" style="height: 100vh; width: 100vw;" *ngIf="this.userLogged == false">
     <div class="flex-container">
         <app-auth-firebase class="section_item"></app-auth-firebase>
     </div>
 </div>
 
-<div class="d-flex" id="wrapper" *ngIf="false">
+<div class="d-flex" id="wrapper" *ngIf="this.userLogged == true">
 
     <!-- SIDEBARS -->
     <app-sidebar-oculto *ngIf="globalSettings.sidebarVisible && globalSettings.uiSetiings.sidebar.sidebarHide1.activated"></app-sidebar-oculto>

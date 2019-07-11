@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthFbService } from 'src/app/services/auth-fb.service';
 
 @Component({
   selector: 'app-access-without-register',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccessWithoutRegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public _authService: AuthFbService
+  ) { }
 
   ngOnInit() {
+  }
+
+  onSubmit() {
+    this._authService.login('test@test1.com', 'test12345');
   }
 
 }

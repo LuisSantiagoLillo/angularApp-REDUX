@@ -13,8 +13,21 @@
         "initialItem3": "Styles made with Bootstrap y FontAwesome.",
         "initialItem4": "",
         "accessWithoutRegistration": "Access without registration",
+        "accessWithoutRegistrationText1": "begins been a portfolio project to show how works the Pattern REDUX into a huge Web App with Angular.",
+        "accessWithoutRegistrationText2": "Test the web app without registration, if you are not agree  leaving your email.",
+        "accessWithoutRegistrationNubeText1": "Portfolio project working with ",
+        "accessWithoutRegistrationNubeText2": "Test the web app without registration",
+        "accessWithoutRegistrationNubeText3": "if you are not agree  leaving your email",
+        "promiseNotShareYourEmail": "We'll never share your email with anyone else.",
         "signIn": "Sign In",
-        "signUp": "Sign Up"
+        "signUp": "Sign Up",
+        "email": "Email",
+        "password": "Password",
+        "name": "Name",
+        "submit": "Submit",
+        "welcomeIA": "Welcome to PersonalIA",
+        "enter": "Enter",
+        "text1IA": "PersonalIA is an example about how to implementade Pattern REDUX in Angular, this SPA has been created focused in this part."
     },
     "theme": {
         "clear": "Clear Theme",
