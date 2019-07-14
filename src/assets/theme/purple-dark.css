@@ -229,3 +229,11 @@ a.link:focus {
         background: #1c2128;
     }
 }
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar-thumb {
+    background: #7460ee;
+    border-radius: 5px;
+}
