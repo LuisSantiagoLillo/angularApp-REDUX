@@ -1,5 +1,15 @@
 <div class="container-fluid">
 
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <a type="button" class="btn btn-3d green  btn-block" (click)="changeSidebar('sidebarReduced1')">
+                Reduced Sidebar
+                <i class="far fa-check-circle" *ngIf="globalSettings.uiSetiings.sidebar.sidebarReduced1.activated"></i>
+            </a>
+            <a type="button" class="btn btn-3d btn-block" (click)="changeSidebar('sidebarHide1')" [ngClass]="{'green': globalSettings.uiSetiings.sidebar.sidebarHide1.activated == true, 'blue': globalSettings.uiSetiings.sidebar.sidebarHide1.activated == false}">Simple Sidebar</a>
+        </div>
+    </div>
+
     <div class="row mt-4">
         <div class="col-sm-12 col-md-6">
             <form class="form">
