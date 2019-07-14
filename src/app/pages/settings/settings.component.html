@@ -1,4 +1,34 @@
 <div class="container-fluid">
+
+    <div class="row mt-4">
+        <div class="col-sm-12 col-md-6">
+            <form class="form">
+                <h4>Choose Sidebar: </h4>
+                <div class="inputGroup">
+                    <input id="sidebarReduced1" name="sidebars" type="radio" (click)="changeSidebar('sidebarReduced1')" />
+                    <label for="sidebarReduced1">Reduced Sidebar</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="sidebarHide1" name="sidebars" type="radio" (click)="changeSidebar('sidebarHide1')" />
+                    <label for="sidebarHide1">Simple Sidebar</label>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <form class="form">
+                <h4>Choose Navbar: </h4>
+                <div class="inputGroup">
+                    <input id="navbarSimple1" name="navbars" type="radio" (click)="changeNavbar('navbarSimple1')" />
+                    <label for="navbarSimple1">Simple Navbar</label>
+                </div>
+                <div class="inputGroup">
+                    <input id="navbarGradient1" name="navbars" type="radio" (click)="changeNavbar('navbarGradient1')" />
+                    <label for="navbarGradient1">Gradient Navbar</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="row">
         <div class="jumbotron">
             <h1 class="display-4">Hello, world!</h1>
@@ -6,10 +36,7 @@
             <app-change-languague></app-change-languague>
             <app-change-theme></app-change-theme>
             <hr class="my-4">
-            <button class="btn btn-success" (click)="changeSidebar('sidebarCircular1')">
-              Sidebar Circular
-            </button>
-            <button class="btn btn-success" (click)="changeSidebar('sidebarSimple1')">
+            <button class="btn btn-success" s="btn btn-success" (click)="changeSidebar('sidebarSimple1')">
                 Sidebar Simple 1
               </button>
             <button class="btn btn-success" (click)="changeSidebar('sidebarReduced1')">
@@ -29,89 +56,5 @@
                     </button>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
 </div>
