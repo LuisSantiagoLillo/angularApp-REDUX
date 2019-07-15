@@ -49,6 +49,7 @@ import { Login2Component } from './auth/login2/login2.component';
 import { AccessWithoutRegisterComponent } from './auth/access-without-register/access-without-register.component';
 import { LogoutButtonComponent } from './auth/logout-button/logout-button.component';
 import { AuthLoadingComponent } from './auth/auth-loading/auth-loading.component';
+import { MonkeysWorkingComponent } from './components/errors/monkeys-working/monkeys-working.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { AuthLoadingComponent } from './auth/auth-loading/auth-loading.component
     Login2Component,
     AccessWithoutRegisterComponent,
     LogoutButtonComponent,
-    AuthLoadingComponent
+    AuthLoadingComponent,
+    MonkeysWorkingComponent
   ],
   imports: [
     BrowserModule,

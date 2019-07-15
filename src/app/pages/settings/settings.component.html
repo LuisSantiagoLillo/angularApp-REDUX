@@ -1,70 +1,100 @@
 <div class="container-fluid">
 
-    <div class="row">
-        <div class="col-sm-12 col-md-6">
-            <a type="button" class="btn btn-3d green  btn-block" (click)="changeSidebar('sidebarReduced1')">
-                Reduced Sidebar
-                <i class="far fa-check-circle" *ngIf="globalSettings.uiSetiings.sidebar.sidebarReduced1.activated"></i>
-            </a>
-            <a type="button" class="btn btn-3d btn-block" (click)="changeSidebar('sidebarHide1')" [ngClass]="{'green': globalSettings.uiSetiings.sidebar.sidebarHide1.activated == true, 'blue': globalSettings.uiSetiings.sidebar.sidebarHide1.activated == false}">Simple Sidebar</a>
+    <div class="card mt-2">
+        <div class="card-title">
+            <hr class="hr-text" data-content="Sidebars & Navbars">
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-center">
+                    <a class="btn1 right" (click)="changeSidebar('sidebarHide1')">
+                        <span class="left title text-white">Sidebar Simple</span>
+                        <span class="right icon icon-heart bg-theme">
+                            <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide1.activated}"></i>
+                            <span class="arrow-right"></span>
+                        </span>
+                    </a>
+                    <br>
+                    <a class="btn1 right" (click)="changeSidebar('sidebarReduced1')">
+                        <span class="left title text-white">Sidebar Reduced</span>
+                        <span class="right icon icon-heart bg-theme">
+                            <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarReduced1.activated}"></i>
+                            <span class="arrow-right"></span>
+                        </span>
+                    </a>
+                    <br>
+                    <a class="btn1 right" (click)="changeSidebar('sidebarCircular1')">
+                        <span class="left title text-white">Sidebar Rounded</span>
+                        <span class="right icon icon-heart bg-theme">
+                            <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarCircular1.activated}"></i>
+                            <span class="arrow-right"></span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 text-center">
+                    <a class="btn1 right" (click)="changeNavbar('navbarSimple1')">
+                        <span class="left title text-white">Navbar Simple</span>
+                        <span class="right icon icon-heart bg-theme">
+                            <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.navbar.navbarSimple1.activated}"></i>
+                            <span class="arrow-right"></span>
+                        </span>
+                    </a>
+                    <br>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-sm-12 col-md-6">
-            <form class="form">
-                <h4>Choose Sidebar: </h4>
-                <div class="inputGroup">
-                    <input id="sidebarReduced1" name="sidebars" type="radio" (click)="changeSidebar('sidebarReduced1')" />
-                    <label for="sidebarReduced1">Reduced Sidebar</label>
-                </div>
-                <div class="inputGroup">
-                    <input id="sidebarHide1" name="sidebars" type="radio" (click)="changeSidebar('sidebarHide1')" />
-                    <label for="sidebarHide1">Simple Sidebar</label>
-                </div>
-            </form>
+
+
+    <div class="card mt-2">
+        <div class="card-title">
+            <hr class="hr-text" data-content="Color Theme">
         </div>
-        <div class="col-sm-12 col-md-6">
-            <form class="form">
-                <h4>Choose Navbar: </h4>
-                <div class="inputGroup">
-                    <input id="navbarSimple1" name="navbars" type="radio" (click)="changeNavbar('navbarSimple1')" />
-                    <label for="navbarSimple1">Simple Navbar</label>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center">
+                        <h6 class="text-dark"> {{ 'theme.clear' | translate }} </h6>
+                        <button (click)="storeTheme('default')" class="btn btn-lg button_large mr-1 ml-1 default-theme"></button>
+                        <button (click)="storeTheme('green')" class="btn btn-lg button_large mr-1 ml-1 green-theme"></button>
+                        <button (click)="storeTheme('red')" class="btn btn-lg button_large mr-1 ml-1 red-theme"></button>
+                        <button (click)="storeTheme('blue')" class="btn btn-lg button_large mr-1 ml-1 blue-theme"></button>
+                        <button (click)="storeTheme('purple')" class="btn btn-lg button_large mr-1 ml-1 purple-theme"></button>
+                        <button (click)="storeTheme('megna')" class="btn btn-lg button_large mr-1 ml-1 megna-theme"></button>
+                    </div>
                 </div>
-                <div class="inputGroup">
-                    <input id="navbarGradient1" name="navbars" type="radio" (click)="changeNavbar('navbarGradient1')" />
-                    <label for="navbarGradient1">Gradient Navbar</label>
+                <div class="col">
+                    <div class="text-center">
+                        <h6 class="text-dark"><strong>{{ 'theme.dark' | translate }}</strong></h6>
+                        <button (click)="storeTheme('default-dark')" class="btn btn-lg button_large mr-1 ml-1 default-dark-theme"></button>
+                        <button (click)="storeTheme('green-dark')" class="btn btn-lg button_large mr-1 ml-1 green-dark-theme"></button>
+                        <button (click)="storeTheme('red-dark')" class="btn btn-lg button_large mr-1 ml-1 red-dark-theme"></button>
+                        <button (click)="storeTheme('blue-dark')" class="btn btn-lg button_large mr-1 ml-1 blue-dark-theme"></button>
+                        <button (click)="storeTheme('purple-dark')" class="btn btn-lg button_large mr-1 ml-1 purple-dark-theme"></button>
+                        <button (click)="storeTheme('megna-dark')" class="btn btn-lg button_large mr-1 ml-1 megna-dark-theme"></button>
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <app-sidebar-visible-button></app-sidebar-visible-button>
-            <app-change-languague></app-change-languague>
-            <app-change-theme></app-change-theme>
-            <hr class="my-4">
-            <button class="btn btn-success" s="btn btn-success" (click)="changeSidebar('sidebarSimple1')">
-                Sidebar Simple 1
-              </button>
-            <button class="btn btn-success" (click)="changeSidebar('sidebarReduced1')">
-                  Sidebar Reducido
-                </button>
-            <button class="btn btn-success" (click)="changeSidebar('sidebarHide1')">
-                        Sidebar Oculto
-                      </button>
-            <button class="btn btn-success" (click)="changeSidebar('sidebarHide2')">
-                            Sidebar Oculto 2
-                          </button>
-            <button class="btn btn-success" (click)="changeNavbar('navbarSimple1')">
-                    Navbar Simple 1
-                  </button>
-            <button class="btn btn-success" (click)="changeNavbar('navbarGradient1')">
-                      Navbar Gradient
-                    </button>
+
+    <div class="card mt-2 mb-4">
+        <div class="card-title">
+            <hr class="hr-text" data-content="Change Languague">
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <button (click)="storeLanguague('en')" class="btn btn-lg btn-outline-light mr-1 ml-1 bg-theme">EN</button>
+                        <button (click)="storeLanguague('es')" class="btn btn-lg btn-outline-light mr-1 ml-1 bg-theme">ES</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 
 </div>

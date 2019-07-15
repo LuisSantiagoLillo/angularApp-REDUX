@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 // REDUX NGRX
 import { Store } from '@ngrx/store';
 import { State } from '../../store/index';
-import { SetNavbar, SetSidebar, GlobalSettings} from '../../store/actions/globalSettings.actions';
+import { SetNavbar, SetSidebar, GlobalSettings, SetTheme, SetLanguague} from '../../store/actions/globalSettings.actions';
 
 @Component({
   selector: 'app-settings',
@@ -28,5 +28,15 @@ export class SettingsComponent implements OnInit {
 
   changeSidebar(nameSidebar: string) {
     this.store.dispatch(new SetSidebar(nameSidebar, true));
+  }
+
+
+  storeTheme(theme_color: string): void {
+    const themeUrl = `assets/theme/${theme_color}.css`;
+    this.store.dispatch(new SetTheme(themeUrl, theme_color));
+  }
+
+  storeLanguague(language: string): void {
+    this.store.dispatch(new SetLanguague(language));
   }
 }
