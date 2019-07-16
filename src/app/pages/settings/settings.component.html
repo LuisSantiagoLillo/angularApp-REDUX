@@ -6,39 +6,61 @@
         </div>
         <div class="card-body">
             <div class="row">
+                <!-- SIDEBARS -->
                 <div class="col-sm-12 col-md-6 text-center">
-                    <a class="btn1 right" (click)="changeSidebar('sidebarHide1')">
-                        <span class="left title text-white">Sidebar Simple</span>
-                        <span class="right icon icon-heart bg-theme">
-                            <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide1.activated}"></i>
-                            <span class="arrow-right"></span>
-                        </span>
-                    </a>
-                    <br>
-                    <a class="btn1 right" (click)="changeSidebar('sidebarReduced1')">
-                        <span class="left title text-white">Sidebar Reduced</span>
-                        <span class="right icon icon-heart bg-theme">
-                            <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarReduced1.activated}"></i>
-                            <span class="arrow-right"></span>
-                        </span>
-                    </a>
-                    <br>
-                    <a class="btn1 right" (click)="changeSidebar('sidebarCircular1')">
-                        <span class="left title text-white">Sidebar Rounded</span>
-                        <span class="right icon icon-heart bg-theme">
-                            <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarCircular1.activated}"></i>
-                            <span class="arrow-right"></span>
-                        </span>
-                    </a>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0">
+                            <a class="btn1 right" (click)="changeSidebar('sidebarHide1')">
+                                <span class="left title text-white">Sidebar Simple</span>
+                                <span class="right icon icon-heart bg-theme">
+                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide1.activated}"></i>
+                                    <span class="arrow-right"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0">
+                            <a class="btn1 right" (click)="changeSidebar('sidebarReduced1')">
+                                <span class="left title text-white">Sidebar Reduced</span>
+                                <span class="right icon icon-heart bg-theme">
+                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarReduced1.activated}"></i>
+                                    <span class="arrow-right"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0">
+                            <a class="btn1 right" (click)="changeSidebar('sidebarCircular1')">
+                                <span class="left title text-white">Sidebar Rounded</span>
+                                <span class="right icon icon-heart bg-theme">
+                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarCircular1.activated}"></i>
+                                    <span class="arrow-right"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0">
+                            <a class="btn1 right" (click)="changeSidebar('sidebarHide2')">
+                                <span class="left title text-white">Sidebar Hided</span>
+                                <span class="right icon icon-heart bg-theme">
+                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide2.activated}"></i>
+                                    <span class="arrow-right"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+                <!-- NAVBARS -->
                 <div class="col-sm-12 col-md-6 text-center">
-                    <a class="btn1 right" (click)="changeNavbar('navbarSimple1')">
-                        <span class="left title text-white">Navbar Simple</span>
-                        <span class="right icon icon-heart bg-theme">
-                            <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.navbar.navbarSimple1.activated}"></i>
-                            <span class="arrow-right"></span>
-                        </span>
-                    </a>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0">
+                            <a class="btn1 right" (click)="changeNavbar('navbarSimple1')">
+                                <span class="left title text-white">Navbar Simple</span>
+                                <span class="right icon icon-heart bg-theme">
+                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.navbar.navbarSimple1.activated}"></i>
+                                    <span class="arrow-right"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
                     <br>
                 </div>
             </div>

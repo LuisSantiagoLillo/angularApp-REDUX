@@ -93,5 +93,9 @@
             "event_rest": "Next events",
             "event_last": "Last events"
         }
+    },
+    "settings": {
+        "color_theme": "Color Theme",
+        "change_language": "Change language"
     }
 }

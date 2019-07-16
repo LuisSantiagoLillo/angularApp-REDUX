@@ -93,6 +93,10 @@
             "event_rest": "Eventos próximos",
             "event_last": "Eventos pasados"
         }
+    },
+    "settings": {
+        "color_theme": "Colores del tema",
+        "change_language": "Cambiar idioma"
     }
 
 }

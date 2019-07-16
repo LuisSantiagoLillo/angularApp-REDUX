@@ -13,6 +13,12 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 // **************************
 
+// ** ANGULAR MATERIAL
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+// ******************************************
+
 // Drag & Drop ************************************************ //
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
@@ -78,6 +84,7 @@ import { MonkeysWorkingComponent } from './components/errors/monkeys-working/mon
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    BrowserAnimationsModule, // Angular Material
     DragDropModule, // Drag&Drop
     // Translate NGRX
     HttpClientModule,
