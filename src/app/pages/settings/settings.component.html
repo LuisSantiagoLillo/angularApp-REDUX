@@ -1,61 +1,64 @@
-<div class="container-fluid">
-
-    <div class="card mt-2">
-        <div class="card-title">
-            <hr class="hr-text" data-content="Sidebars & Navbars">
-        </div>
-        <div class="card-body">
-            <div class="row">
+<div class="container-fluid  text-center">
+    <mat-card class="mt-3 animate card--z-3">
+        <mat-card-header>
+            <mat-card-title>
+                <h5>Sidebars & Navbars</h5>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class=" row ">
                 <!-- SIDEBARS -->
-                <div class="col-sm-12 col-md-6 text-center">
-                    <ul class="list-group">
-                        <li class="list-group-item border-0">
-                            <a class="btn1 right" (click)="changeSidebar('sidebarHide1')">
-                                <span class="left title text-white">Sidebar Simple</span>
-                                <span class="right icon icon-heart bg-theme">
-                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide1.activated}"></i>
-                                    <span class="arrow-right"></span>
+                <div class="col-sm-12 col-md-6 text-center ">
+                    <ul class="list-group ">
+                        <li class="list-group-item border-0 ">
+                            <a class="btn1 right " (click)="changeSidebar( 'sidebarHide1') ">
+                                <span class="left title text-white ">Sidebar Simple</span>
+                                <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide1.activated} "></i>
+                                        <span class="arrow-right "></span>
                                 </span>
                             </a>
                         </li>
-                        <li class="list-group-item border-0">
-                            <a class="btn1 right" (click)="changeSidebar('sidebarReduced1')">
-                                <span class="left title text-white">Sidebar Reduced</span>
-                                <span class="right icon icon-heart bg-theme">
-                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarReduced1.activated}"></i>
-                                    <span class="arrow-right"></span>
+                        <li class="list-group-item border-0 ">
+                            <a class="btn1 right " (click)="changeSidebar( 'sidebarReduced1') ">
+                                <span class="left title text-white ">Sidebar Reduced</span>
+                                <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.sidebar.sidebarReduced1.activated} "></i>
+                                        <span class="arrow-right "></span>
                                 </span>
                             </a>
                         </li>
-                        <li class="list-group-item border-0">
-                            <a class="btn1 right" (click)="changeSidebar('sidebarCircular1')">
-                                <span class="left title text-white">Sidebar Rounded</span>
-                                <span class="right icon icon-heart bg-theme">
-                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarCircular1.activated}"></i>
-                                    <span class="arrow-right"></span>
+                        <li class="list-group-item border-0 ">
+                            <a class="btn1 right " (click)="changeSidebar( 'sidebarCircular1') ">
+                                <span class="left title text-white ">Sidebar Rounded</span>
+                                <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.sidebar.sidebarCircular1.activated} "></i>
+                                        <span class="arrow-right "></span>
                                 </span>
                             </a>
                         </li>
-                        <li class="list-group-item border-0">
-                            <a class="btn1 right" (click)="changeSidebar('sidebarHide2')">
-                                <span class="left title text-white">Sidebar Hided</span>
-                                <span class="right icon icon-heart bg-theme">
-                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide2.activated}"></i>
-                                    <span class="arrow-right"></span>
+                        <li class="list-group-item border-0 ">
+                            <a class="btn1 right " (click)="changeSidebar( 'sidebarHide2') ">
+                                <span class="left title text-white ">Sidebar Hided</span>
+                                <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide2.activated} "></i>
+                                        <span class="arrow-right "></span>
                                 </span>
                             </a>
                         </li>
                     </ul>
                 </div>
+                <mat-divider [vertical]="true "></mat-divider>
+
                 <!-- NAVBARS -->
-                <div class="col-sm-12 col-md-6 text-center">
-                    <ul class="list-group">
-                        <li class="list-group-item border-0">
-                            <a class="btn1 right" (click)="changeNavbar('navbarSimple1')">
-                                <span class="left title text-white">Navbar Simple</span>
-                                <span class="right icon icon-heart bg-theme">
-                                    <i class="fas fa-heart text-white" [ngClass]="{'text-danger': globalSettings.uiSetiings.navbar.navbarSimple1.activated}"></i>
-                                    <span class="arrow-right"></span>
+                <div class="col-sm-12 col-md-5 text-center ">
+                    <ul class="list-group ">
+                        <li class="list-group-item border-0 ">
+                            <a class="btn1 right " (click)="changeNavbar( 'navbarSimple1') ">
+                                <span class="left title text-white ">Navbar Simple</span>
+                                <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.navbar.navbarSimple1.activated} "></i>
+                                        <span class="arrow-right "></span>
                                 </span>
                             </a>
                         </li>
@@ -64,37 +67,173 @@
                     <br>
                 </div>
             </div>
+        </mat-card-content>
+    </mat-card>
+
+
+    <mat-card class="mt-5 animate card card--z-4">
+        <mat-card-header>
+            <mat-card-title>
+                <h5>Color Theme</h5>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row ">
+                <div class="col ">
+                    <h6 class="text-dark "> {{ 'theme.clear' | translate }} </h6>
+                    <mat-chip-list>
+                        <mat-chip (click)="storeTheme( 'default') " class="default-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'green') " class="green-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'red') " class="red-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'blue') " class="blue-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'purple') " class="purple-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'megna') " class="megna-theme button_large "></mat-chip>
+                    </mat-chip-list>
+                    <!--
+                        <button (click)="storeTheme( 'default') " class="btn btn-lg button_large mr-1 ml-1 default-theme "></button>
+                        <button (click)="storeTheme( 'green') " class="btn btn-lg button_large mr-1 ml-1 green-theme "></button>
+                        <button (click)="storeTheme( 'red') " class="btn btn-lg button_large mr-1 ml-1 red-theme "></button>
+                        <button (click)="storeTheme( 'blue') " class="btn btn-lg button_large mr-1 ml-1 blue-theme "></button>
+                        <button (click)="storeTheme( 'purple') " class="btn btn-lg button_large mr-1 ml-1 purple-theme "></button>
+                        <button (click)="storeTheme( 'megna') " class="btn btn-lg button_large mr-1 ml-1 megna-theme "></button>
+                        -->
+                </div>
+                <div class="col ">
+                    <h6 class="text-dark "><strong>{{ 'theme.dark' | translate }}</strong></h6>
+                    <mat-chip-list>
+                        <mat-chip (click)="storeTheme( 'default-dark') " class="default-dark-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'green-dark') " class="green-dark-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'red-dark') " class="red-dark-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'blue-dark') " class="blue-dark-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'purple-dark') " class="purple-dark-theme button_large "></mat-chip>
+                        <mat-chip (click)="storeTheme( 'megna-dark') " class="megna-dark-theme button_large "></mat-chip>
+                    </mat-chip-list>
+                    <!--
+                        <button (click)="storeTheme( 'default-dark') " class="btn btn-lg button_large mr-1 ml-1 default-dark-theme "></button>
+                        <button (click)="storeTheme( 'green-dark') " class="btn btn-lg button_large mr-1 ml-1 green-dark-theme "></button>
+                        <button (click)="storeTheme( 'red-dark') " class="btn btn-lg button_large mr-1 ml-1 red-dark-theme "></button>
+                        <button (click)="storeTheme( 'blue-dark') " class="btn btn-lg button_large mr-1 ml-1 blue-dark-theme "></button>
+                        <button (click)="storeTheme( 'purple-dark') " class="btn btn-lg button_large mr-1 ml-1 purple-dark-theme "></button>
+                        <button (click)="storeTheme( 'megna-dark') " class="btn btn-lg button_large mr-1 ml-1 megna-dark-theme "></button>
+                        -->
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mt-5 mb-4 animate card card--z-4">
+        <mat-card-header>
+            <mat-card-title>
+                <h5>Change Language</h5>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row ">
+                <div class="col-12 text-center ">
+                    <button (click)="storeLanguague( 'en') " class="btn btn-lg btn-outline-light mr-1 ml-1 bg-theme ">EN</button>
+                    <button (click)="storeLanguague( 'es') " class="btn btn-lg btn-outline-light mr-1 ml-1 bg-theme ">ES</button>
+                </div>
+
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+
+    <!-- OLD BOOTSTRAP CARD - REPLACED BY ANGULAR MATERIAL  CARD -->
+    <!-- 
+
+    <div class="card mt-2 ">
+        <div class="card-title ">
+            <hr class="hr-text " data-content="Sidebars & Navbars ">
         </div>
-    </div>
-
-
-
-    <div class="card mt-2">
-        <div class="card-title">
-            <hr class="hr-text" data-content="Color Theme">
-        </div>
-        <div class="card-body">
-            <div class="row">
-                <div class="col">
-                    <div class="text-center">
-                        <h6 class="text-dark"> {{ 'theme.clear' | translate }} </h6>
-                        <button (click)="storeTheme('default')" class="btn btn-lg button_large mr-1 ml-1 default-theme"></button>
-                        <button (click)="storeTheme('green')" class="btn btn-lg button_large mr-1 ml-1 green-theme"></button>
-                        <button (click)="storeTheme('red')" class="btn btn-lg button_large mr-1 ml-1 red-theme"></button>
-                        <button (click)="storeTheme('blue')" class="btn btn-lg button_large mr-1 ml-1 blue-theme"></button>
-                        <button (click)="storeTheme('purple')" class="btn btn-lg button_large mr-1 ml-1 purple-theme"></button>
-                        <button (click)="storeTheme('megna')" class="btn btn-lg button_large mr-1 ml-1 megna-theme"></button>
+        <div class="card-body ">
+            <div class="row ">
+                <div class="col-sm-12 col-md-6 text-center ">
+                        <ul class="list-group ">
+                            <li class="list-group-item border-0 ">
+                                <a class="btn1 right " (click)="changeSidebar( 'sidebarHide1') ">
+                                    <span class="left title text-white ">Sidebar Simple</span>
+                                    <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide1.activated} "></i>
+                                        <span class="arrow-right "></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-0 ">
+                                <a class="btn1 right " (click)="changeSidebar( 'sidebarReduced1') ">
+                                    <span class="left title text-white ">Sidebar Reduced</span>
+                                    <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.sidebar.sidebarReduced1.activated} "></i>
+                                        <span class="arrow-right "></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-0 ">
+                                <a class="btn1 right " (click)="changeSidebar( 'sidebarCircular1') ">
+                                    <span class="left title text-white ">Sidebar Rounded</span>
+                                    <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.sidebar.sidebarCircular1.activated} "></i>
+                                        <span class="arrow-right "></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-0 ">
+                                <a class="btn1 right " (click)="changeSidebar( 'sidebarHide2') ">
+                                    <span class="left title text-white ">Sidebar Hided</span>
+                                    <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.sidebar.sidebarHide2.activated} "></i>
+                                        <span class="arrow-right "></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 text-center ">
+                        <ul class="list-group ">
+                            <li class="list-group-item border-0 ">
+                                <a class="btn1 right " (click)="changeNavbar( 'navbarSimple1') ">
+                                    <span class="left title text-white ">Navbar Simple</span>
+                                    <span class="right icon icon-heart bg-theme ">
+                                        <i class="fas fa-heart text-white " [ngClass]="{ 'text-danger': globalSettings.uiSetiings.navbar.navbarSimple1.activated} "></i>
+                                        <span class="arrow-right "></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <br>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="text-center">
-                        <h6 class="text-dark"><strong>{{ 'theme.dark' | translate }}</strong></h6>
-                        <button (click)="storeTheme('default-dark')" class="btn btn-lg button_large mr-1 ml-1 default-dark-theme"></button>
-                        <button (click)="storeTheme('green-dark')" class="btn btn-lg button_large mr-1 ml-1 green-dark-theme"></button>
-                        <button (click)="storeTheme('red-dark')" class="btn btn-lg button_large mr-1 ml-1 red-dark-theme"></button>
-                        <button (click)="storeTheme('blue-dark')" class="btn btn-lg button_large mr-1 ml-1 blue-dark-theme"></button>
-                        <button (click)="storeTheme('purple-dark')" class="btn btn-lg button_large mr-1 ml-1 purple-dark-theme"></button>
-                        <button (click)="storeTheme('megna-dark')" class="btn btn-lg button_large mr-1 ml-1 megna-dark-theme"></button>
+            </div>
+        </div>
+
+
+    <div class="card mt-2 ">
+        <div class="card-title ">
+            <hr class="hr-text " data-content="Color Theme ">
+        </div>
+        <div class="card-body ">
+            <div class="row ">
+                <div class="col ">
+                    <div class="text-center ">
+                        <h6 class="text-dark "> {{ 'theme.clear' | translate }} </h6>
+                        <button (click)="storeTheme( 'default') " class="btn btn-lg button_large mr-1 ml-1 default-theme "></button>
+                        <button (click)="storeTheme( 'green') " class="btn btn-lg button_large mr-1 ml-1 green-theme "></button>
+                        <button (click)="storeTheme( 'red') " class="btn btn-lg button_large mr-1 ml-1 red-theme "></button>
+                        <button (click)="storeTheme( 'blue') " class="btn btn-lg button_large mr-1 ml-1 blue-theme "></button>
+                        <button (click)="storeTheme( 'purple') " class="btn btn-lg button_large mr-1 ml-1 purple-theme "></button>
+                        <button (click)="storeTheme( 'megna') " class="btn btn-lg button_large mr-1 ml-1 megna-theme "></button>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="text-center ">
+                        <h6 class="text-dark "><strong>{{ 'theme.dark' | translate }}</strong></h6>
+                        <button (click)="storeTheme( 'default-dark') " class="btn btn-lg button_large mr-1 ml-1 default-dark-theme "></button>
+                        <button (click)="storeTheme( 'green-dark') " class="btn btn-lg button_large mr-1 ml-1 green-dark-theme "></button>
+                        <button (click)="storeTheme( 'red-dark') " class="btn btn-lg button_large mr-1 ml-1 red-dark-theme "></button>
+                        <button (click)="storeTheme( 'blue-dark') " class="btn btn-lg button_large mr-1 ml-1 blue-dark-theme "></button>
+                        <button (click)="storeTheme( 'purple-dark') " class="btn btn-lg button_large mr-1 ml-1 purple-dark-theme "></button>
+                        <button (click)="storeTheme( 'megna-dark') " class="btn btn-lg button_large mr-1 ml-1 megna-dark-theme "></button>
                     </div>
                 </div>
             </div>
@@ -102,21 +241,26 @@
     </div>
 
 
-    <div class="card mt-2 mb-4">
-        <div class="card-title">
-            <hr class="hr-text" data-content="Change Languague">
+
+    <div class="card mt-2 mb-4 ">
+        <div class="card-title ">
+            <hr class="hr-text " data-content="Change Languague ">
         </div>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <button (click)="storeLanguague('en')" class="btn btn-lg btn-outline-light mr-1 ml-1 bg-theme">EN</button>
-                        <button (click)="storeLanguague('es')" class="btn btn-lg btn-outline-light mr-1 ml-1 bg-theme">ES</button>
+        <div class="card-body ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <div class="text-center ">
+                        <button (click)="storeLanguague( 'en') " class="btn btn-lg btn-outline-light mr-1 ml-1 bg-theme ">EN</button>
+                        <button (click)="storeLanguague( 'es') " class="btn btn-lg btn-outline-light mr-1 ml-1 bg-theme ">ES</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+-->
 
+
+
+    <!-- FINAL DIV FROM CONTAINER -->
 </div>

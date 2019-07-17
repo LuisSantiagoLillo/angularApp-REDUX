@@ -14,7 +14,12 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 // **************************
 
 // ** ANGULAR MATERIAL
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 // ******************************************
@@ -84,7 +89,14 @@ import { MonkeysWorkingComponent } from './components/errors/monkeys-working/mon
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule, // Angular Material
+    // ANGULAR MATERIAL *********
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatAutocompleteModule,
+    MatChipsModule,
+    // **************************
     DragDropModule, // Drag&Drop
     // Translate NGRX
     HttpClientModule,

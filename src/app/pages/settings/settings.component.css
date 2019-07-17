@@ -391,5 +391,69 @@ hr.sep-3::after {
 }
 
 .card {
-    border-color: transparent;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #aaa;
+    display: inline-block;
+    margin: 0 1rem 1rem;
+    max-width: 448px;
+    padding: 1.5rem;
+    position: relative;
+    z-index: 2;
 }
+
+.animate {
+    -webkit-animation: fly-in .3s .5s ease both;
+    -moz-animation: fly-in .3s .5s ease both;
+    -o-animation: fly-in .3s .5s ease both;
+    animation: fly-in .3s .5s ease both;
+}
+
+.card--z-4 {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    /* border: 1px solid #eee; */
+}
+
+.card--z-3 {
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.21), 0 16px 28px rgba(0, 0, 0, 0.22);
+    /* border: 1px solid #eee; */
+}
+
+.card:hover {
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.21), 0 16px 28px rgba(0, 0, 0, 0.22);
+}
+
+.card-color-purple {
+    background: #a295f6
+}
+
+.card-color-yellow {
+    background: #c7bf75
+}
+
+
+/* OJO GENERA PROBLEMAS
+@-webkit-keyframes fly-in {
+    from {
+        -webkit-transform: translateY(15rem) rotate(15deg);
+        transform: translateY(15rem) rotate(15deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fly-in {
+    from {
+        -moz-transform: translateY(15rem) rotate(15deg);
+        transform: translateY(15rem) rotate(15deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fly-in {
+    from {
+        transform: translateY(15rem) rotate(15deg);
+        opacity: 0;
+    }
+}
+*/
