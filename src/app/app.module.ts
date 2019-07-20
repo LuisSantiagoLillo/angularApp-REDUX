@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 // ******************************************
@@ -96,6 +97,7 @@ import { MonkeysWorkingComponent } from './components/errors/monkeys-working/mon
     MatDividerModule,
     MatAutocompleteModule,
     MatChipsModule,
+    MatTabsModule,
     // **************************
     DragDropModule, // Drag&Drop
     // Translate NGRX
