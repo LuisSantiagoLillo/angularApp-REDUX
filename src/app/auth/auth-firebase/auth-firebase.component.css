@@ -10,6 +10,12 @@
     }
 }
 
+@media(min-width: 991px) {
+    #logo-app {
+        margin-top: 2.6rem;
+    }
+}
+
 h4 {
     color: #cacaca;
     font-size: 2.625em;
